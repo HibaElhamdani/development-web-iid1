@@ -1,0 +1,127 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:read-only,
+input[type="email"]:read-only,
+input[type="tel"]:read-only,
+textarea:read-only,
+select:disabled {
+    background-color: #f9f9f9;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Checkbox styling */
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Button styling */
+button,
+.back-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+.back-button {
+    background-color: #2ecc71;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.back-button:hover {
+    background-color: #27ae60;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
