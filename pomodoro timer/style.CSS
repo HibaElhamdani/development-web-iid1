@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(-135deg, #ff7eb3, #ff758c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    /* Espace entre les éléments */
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2em;
+    /* Arrondir les bordures */
+    padding: 4em 3em;
+}
+
+.title {
+    font-size: 4em;
+}
+
+.hr {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 1em 0;
+    border-radius: 1em;
+    border: none;
+}
+
+.timer {
+    font-size: 10em;
+    /* Taille de la police */
+    font-weight: 700;
+    /* Gras */
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 1em;
+    /* Ajouter un espace entre les éléments */
+}
+
+button {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    /* Espace entre les lettres */
+    padding: 0.5em 1.5em;
+    /* Correction de l’espace */
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    /* Curseur de la souris */
+    transition: 0.2s ease-in-out;
+    /* Transition de 0.2s */
+}
+
+button:hover {
+    transform: scale(1.1);
+    /* Agrandir le bouton */
+}
+
+#start {
+    background-color: rgb(86, 230, 14);
+}
+
+#stop {
+    background-color: rgb(246, 25, 25);
+}
+
+#reset {
+    background-color: rgb(24, 137, 242);
+}
