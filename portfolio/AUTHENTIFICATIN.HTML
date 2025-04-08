@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            backdrop-filter: blur(10px);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        input::placeholder {
+            color: #ddd;
+        }
+
+        input[type="submit"] {
+            background-color: #ffcc00;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff9900;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" placeholder="First Name">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" placeholder="Last Name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" placeholder="Phone" required pattern="^(\+212|0)[5-7][0-9]{8}$">
+
+        <label>Genre :</label>
+        <input type="radio" id="homme" name="gender" value="homme" required>
+        <label for="homme">Homme</label>
+
+        <input type="radio" id="femme" name="gender" value="femme">
+        <label for="femme">Femme</label>
+
+        <input type="radio" id="autre" name="gender" value="autre">
+        <label for="autre">Autre</label>
+
+        <label for="date">Date de Naissance</label>
+        <input type="date" name="date" required>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repertoir>
+  <person1 id="1">
+    <gender class="gnd">female</gender>
+    <lastname class="last">el hamdani</lastname>
+    <firstname class="first">hiba</firstname>
+    <adress class="adrs">khouribga</adress>
+    <phone_number class="phone">004923956234895</phone_number>
+    <email_personnel >hiba@gmail.com</email_personnel>
+    <email_or>hiba12@gmail.com</email_or>
+  </person1>
+
+  <person2 id="2">
+    <gender class="gnd">male</gender>
+    <lastname class="last">ait-tami</lastname>
+    <firstname class="first">zouhair</firstname>
+    <adress  class="adrs">khouribga</adress>
+    <phone_number class="phone">0606876644</phone_number>
+    <email_personnel>zouhairtami@gmail.com</email_personnel>
+    <email_or>zouhair12@gmail.com</email_or>
+  </person2>
+
+  <person3 id="3">
+    <gender class="gnd">female</gender>
+    <lastname class="last">ait-tami</lastname>
+    <firstname class="first">nawal</firstname>
+    <adress  class="adrs">khouribga</adress>
+    <phone_number class="phone">00492388895</phone_number>
+    <email_personnel>nawaltami@gmail.com</email_personnel>
+    <email_or>nawaltami@usms.ac.ma</email_or>
+  </person3>
+</repertoire>
